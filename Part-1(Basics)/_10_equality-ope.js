@@ -25,8 +25,8 @@ console.log(`It is a loose equality operator`);
 /* 
 *** Input from user ***
 */
-const newAge = prompt("What's your age ?");
-alert(`Your age is ${newAge} and ` + `data type is a `+ typeof(prompt("What's your age ?")) );
+// const newAge = prompt("What's your age ?");
+// alert(`Your age is ${newAge} and ` + `data type is a `+ typeof(prompt("What's your age ?")) );
 
 /* 
 *** Boolean Logic ***
@@ -46,3 +46,23 @@ alert(`Your age is ${newAge} and ` + `data type is a `+ typeof(prompt("What's yo
 
 // Not A, Not B
 // Inverts true/false values
+
+/*
+*** Logical operators ***
+
+*/ 
+
+const hasDriverLicense = true; 
+const hasGoodVision = false; 
+
+console.log( hasDriverLicense && hasGoodVision); // fasle
+console.log( hasDriverLicense || hasGoodVision); // true
+// console.log( !hasDriverLicense); // false
+
+const shouldDrive = hasDriverLicense && hasGoodVision;
+
+if(shouldDrive) {
+    console.log('Prince is able to drive');
+} else {
+    console.log('Prince is not able to drive'); // this will execute because shouldDrive is false in this situation
+}

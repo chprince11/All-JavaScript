@@ -16,12 +16,8 @@ console.log(yearUntilRetirement(2002, 'Prince')); // 43
 console.log(yearUntilRetirement(1957, 'Prince')); // -2 // Already retired
 console.log(yearUntilRetirement(1957, 'Prince')); // -1 // Already retired
 
-const calcAverage = ( firstScore, secondScore, thirdScore ) => {
-    return (firstScore + secondScore + thirdScore) / 3;
-};
 
-
-// Example 
+// Arrow function more examples 
 const calcAvg = ( firstNumber, secondNumber, thirdNumber ) => { ( firstNumber + secondNumber + thirdNumber ) / 3 };
 
 const scoreDolphins = calcAvg( 44, 23, 71 );
